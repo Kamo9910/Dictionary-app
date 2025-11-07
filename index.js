@@ -17,10 +17,11 @@ document.getElementById("callApiBtn").addEventListener("click", async function (
     if (response.ok) {
       resultElement.innerText = (data.definition || "No definition found.");
     } else {
-      resultElement.innerText = "Error: " + (data.error || "Unknown error");
+      resultElement.innerText = "Error: " + (data.error || "Definition not in the dictionary");
     }
   } catch (error) {
     console.error(error);
     resultElement.innerText = "❌ Something went wrong.";
   }
 });
+
