@@ -10,8 +10,8 @@ document.getElementById("callApiBtn").addEventListener("click", async () => {
   }
 
   try {
-    // ✅ Use backticks for template literals
-    const response = await fetch(${API_URL}/terms/${encodeURIComponent(word)}, {
+    // ✅ Use query string ?term=...
+    const response = await fetch(${API_URL}/definitions?term=${encodeURIComponent(word)}, {
       method: "GET"
     });
 
