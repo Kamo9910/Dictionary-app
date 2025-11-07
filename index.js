@@ -10,7 +10,7 @@ document.getElementById("callApiBtn").addEventListener("click", async () => {
   }
 
   try {
-    // ✅ Use query string ?term=...
+    // ✅ Query string style since your API is /definitions?term=...
     const response = await fetch(${API_URL}/definitions?term=${encodeURIComponent(word)}, {
       method: "GET"
     });
