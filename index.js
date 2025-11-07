@@ -10,7 +10,7 @@ document.getElementById("callApiBtn").addEventListener("click", async () => {
   }
 
   try {
-    // ✅ Correct use of template literal
+    // ✅ Use backticks for template literals
     const response = await fetch(${API_URL}/terms/${encodeURIComponent(word)}, {
       method: "GET"
     });
