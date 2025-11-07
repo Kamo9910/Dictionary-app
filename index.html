@@ -1,24 +1,19 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Serverless Cloud Dictionary</title>
-  <style>
-    body { font-family: Arial, sans-serif; max-width: 700px; margin: 32px auto; padding: 0 16px; }
-    input, button { padding: 8px; font-size: 16px; }
-    #result { margin-top: 20px; padding: 12px; border-radius: 6px; background: #f3f3f3; }
-  </style>
 </head>
 <body>
-  <h1>Serverless Cloud Dictionary</h1>
-  <p>Enter a term (e.g. <em>lambda</em>, <em>dynamodb</em>)</p>
+  <h2>Serverless Cloud Dictionary</h2>
+  
+  <input type="text" id="wordInput" placeholder="Enter a cloud term" />
+  <button id="callApiBtn">Search</button>
 
-  <input id="termInput" placeholder="Search term" />
-  <button id="searchBtn">Search</button>
+  <p id="result"></p>
 
-  <div id="result"></div>
-
+  <!-- Link to external JavaScript -->
   <script src="index.js"></script>
 </body>
 </html>
